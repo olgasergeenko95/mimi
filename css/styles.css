@@ -149,7 +149,7 @@ body {
   .hotel-discp {
     display: flex;
     flex-direction: row;
-    margin-right: auto;
+    align-items: center;
     margin-bottom: 80px;
   }
 }
