@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
   </head>
   <body>
     <main>
@@ -143,6 +148,73 @@
             </ul>
           </div>
         </div>
+        <div class="backdrop is-hidden">
+          <div class="book-a-room">
+            <button type="button" class="close-btn">
+              <svg class="close-btn-icon" width="28" height="28">
+                <use href="./sprite.svg#icon-cross" viewBox="0 0 32 32"></use>
+              </svg>
+            </button>
+            <h2 class="book-a-room-title">BOOK A ROOM</h2>
+            <form class="first-form-page">
+              <div class="form-wrap">
+                <div>
+                  <p class="first-form-suptitle">Your name</p>
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="user-name"
+                    minlength="2"
+                    autofocus
+                    required
+                  />
+                  <span class="first-form-text"
+                    >Who should book a table for?</span
+                  >
+                </div>
+                <div>
+                  <p class="first-form-suptitle">+ 38 ()</p>
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="user-phone"
+                    required
+                  />
+                  <span class="first-form-text">Phone number</span>
+                </div>
+                <div>
+                  <select class="form-select" name="check-in-date">
+                    <option value="Today">Today</option>
+                    <option value="Tomorrow">Tomorrow</option>
+                  </select>
+                  <span class="first-form-text">Check-in date</span>
+                </div>
+                <div>
+                  <select class="form-select" name="date">
+                    <option value="25/04/2023">25/04/2023</option>
+                    <option value="26/04/2023">26/04/2023</option>
+                  </select>
+                  <span class="first-form-text">Check-out date</span>
+                </div>
+                <div>
+                  <select class="form-select" name="view of the rooms">
+                    <option value="Double suite">DOUBLE LUXURY ROOM</option>
+                    <option value="Double suite">Triple Room</option>
+                    <option value="Double suite">four-seater room</option>
+                  </select>
+                  <span class="first-form-text">Number category</span>
+                </div>
+              </div>
+              <button class="book-a-room-btn" type="submit">
+                MAKE A RESERVATION
+              </button>
+            </form>
+          </div>
+        </div>
       </section>
+    </main>
+
+    <script src="./js/modal.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
