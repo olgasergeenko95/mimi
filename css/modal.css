@@ -1,4 +1,4 @@
-/* Modal Book a room */
+/* Book a room */
 
 .book-a-room {
   position: absolute;
@@ -9,7 +9,7 @@
   max-height: 706px;
   background: #121212;
   border-radius: 2px;
-  z-index: 777;
+  z-index: 999;
   padding: 14px;
   padding-bottom: 40px;
   overflow-y: auto;
@@ -29,15 +29,10 @@
   border: 0;
   padding: 0;
   color: #f6f6f6;
-  z-index: 778;
-}
-.close-btn-icon {
-  stroke: currentColor;
+  z-index: 1000;
 }
 
 .book-a-room-title {
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 500;
   font-size: 28px;
   line-height: 1.36;
@@ -49,8 +44,6 @@
 }
 
 .first-form-suptitle {
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
@@ -78,8 +71,6 @@
 
 .form-select {
   width: 287px;
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
@@ -95,9 +86,6 @@
 }
 .first-form-text {
   display: block;
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 8px;
   line-height: 1.5;
   letter-spacing: 0.18em;
@@ -109,9 +97,6 @@
 .book-a-room-btn {
   display: block;
   margin: 0 auto;
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -212,8 +197,6 @@
 
   .form-select {
     width: 266px;
-    font-family: "DM Sans";
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
@@ -235,15 +218,5 @@
   .book-a-room-btn {
     margin-top: 80px;
     margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .book-a-room-btn {
-    transition: color 250ms linear;
-  }
-  .book-a-room-btn:is(:hover, :focus) {
-    color: #121212;
-    background: #ffffff;
   }
 }
