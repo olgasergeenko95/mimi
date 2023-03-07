@@ -31,6 +31,17 @@ img {
   object-fit: cover;
   object-position: center;
 }
+img {
+  display: inline-block;
+  overflow: hidden; /* Скрываем всё за контуром */
+}
+img {
+  transition: 0.5s; /* Время эффекта */
+  display: block;
+}
+img:hover {
+  transform: scale(1.1); /* Увеличиваем масштаб */
+}
 
 /* ///////////////////////// */
 body {
